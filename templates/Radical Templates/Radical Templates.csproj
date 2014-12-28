@@ -64,27 +64,45 @@
     <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\..\packages\TemplateBuilder.1.1.2-beta1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="ItemTemplates\Radical ViewModel\CSharp\BlankViewModel.cs" />
-    <None Include="ItemTemplates\Radical View and ViewModel\CSharp\BlankView.xaml.cs">
+    <Compile Include="ItemTemplates\Radical View and ViewModel\CSharp\BlankView.xaml.cs">
       <DependentUpon>BlankView.xaml</DependentUpon>
-    </None>
-    <None Include="ItemTemplates\Radical View and ViewModel\CSharp\BlankViewModel.cs" />
+    </Compile>
+    <Compile Include="ItemTemplates\Radical View and ViewModel\CSharp\BlankViewModel.cs" />
+    <Compile Include="ItemTemplates\Radical ViewModel\CSharp\BlankViewModel.cs" />
+    <Content Include="ItemTemplates\Radical View and ViewModel\icon.png" />
+    <Content Include="ItemTemplates\Radical View and ViewModel\VB\BlankView.xaml.vb" />
+    <Content Include="ItemTemplates\Radical View and ViewModel\VB\BlankViewModel.vb" />
+    <Content Include="ItemTemplates\Radical ViewModel\VB\BlankViewModel.vb" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ItemTemplates\Radical View and ViewModel\VB\BlankView.xaml.vb">
-      <DependentUpon>BlankView.xaml</DependentUpon>
-    </None>
     <Content Include="ItemTemplates\Radical ViewModel\Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\Radical ViewModel\Definitions\VB.vstemplate" />
-    <Content Include="ItemTemplates\Radical ViewModel\icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="ItemTemplates\Radical ViewModel\VB\BlankViewModel.vb" />
     <Content Include="ItemTemplates\Radical View and ViewModel\Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\Radical View and ViewModel\Definitions\VB.vstemplate" />
-    <None Include="ItemTemplates\Radical View and ViewModel\VB\BlankViewModel.vb" />
     <None Include="packages.config" />
+    <Content Include="ItemTemplates\Radical ViewModel\icon.png" />
+    <Content Include="packages\Castle.Core.3.3.0.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\Castle.Windsor.3.3.0.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\Radical.Extensions.CastleWindsor.2.1.0.0.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\Radical.Windows.1.3.14.1.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\Radical.Windows.Presentation.1.10.0.0.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\Radical.Windows.Presentation.CastleWindsor.1.3.0.0.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\Radical.1.5.0.1.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="Properties\template-builder.props" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
@@ -94,9 +112,6 @@
     <Content Include="icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="ItemTemplates\Radical View and ViewModel\icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -117,19 +132,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="System" />
     <Reference Include="TemplateBuilder">
       <HintPath>..\..\packages\TemplateBuilder.1.1.2-beta1\lib\TemplateBuilder.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ItemTemplates\Radical View and ViewModel\CSharp\BlankView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ItemTemplates\Radical View and ViewModel\VB\BlankView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <TemplateReference Include="RadicalProject CSharp Template.csproj">
@@ -138,6 +144,16 @@
     <TemplateReference Include="RadicalProject VBNet Template.vbproj">
       <PathToProject>../RadicalProject%20VBNet%20Template/RadicalProject%20VBNet%20Template.vbproj</PathToProject>
     </TemplateReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ItemTemplates\Radical View and ViewModel\CSharp\BlankView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ItemTemplates\Radical View and ViewModel\VB\BlankView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

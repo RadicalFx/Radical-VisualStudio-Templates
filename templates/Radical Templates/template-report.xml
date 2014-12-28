@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TemplateReport>
   <ItemTemplates>
-    <ItemTemplate Path="ItemTemplates\Radical\Radical View and ViewModel\Definitions\CSharp.vstemplate" Name="Radical View / ViewModel" Description="Create a new View along with its ViewModel." ProjectType="CSharp" ProjectSubType="" />
-    <ItemTemplate Path="ItemTemplates\Radical\Radical ViewModel\Definitions\CSharp.vstemplate" Name="Radical ViewModel" Description="Create a new ViewModel." ProjectType="CSharp" ProjectSubType="" />
-    <ItemTemplate Path="ItemTemplates\Radical\Radical View and ViewModel\Definitions\VB.vstemplate" Name="Radical View / ViewModel" Description="Create a new View along with its ViewModel." ProjectType="VisualBasic" ProjectSubType="" />
-    <ItemTemplate Path="ItemTemplates\Radical\Radical ViewModel\Definitions\VB.vstemplate" Name="Radical View / ViewModel" Description="Create a new ViewModel." ProjectType="VisualBasic" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\Radical ViewModel\Definitions\CSharp.vstemplate" Name="Radical ViewModel" Description="Create a new ViewModel." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\Radical View and ViewModel\Definitions\VB.vstemplate" Name="Radical View / ViewModel" Description="Create a new View along with its ViewModel." ProjectType="VisualBasic" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\Radical ViewModel\Definitions\VB.vstemplate" Name="Radical View / ViewModel" Description="Create a new ViewModel." ProjectType="VisualBasic" ProjectSubType="" />
   </ItemTemplates>
   <ProjectTemplates>
     <ProjectTemplate Path="..\RadicalProject CSharp Template\_Definitions\_project.vstemplate.xml" Name="Radical Framework" Description="Create a new WPF Application project using Radical MVVM Framework (C#)." ProjectType="CSharp" ProjectSubType="" />
