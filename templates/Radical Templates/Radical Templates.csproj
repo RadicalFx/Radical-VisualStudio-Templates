@@ -64,26 +64,26 @@
     <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\..\packages\TemplateBuilder.1.1.2-beta1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ItemTemplates\Radical\Radical View and ViewModel\CSharp\BlankView.xaml.cs">
+    <Compile Include="ItemTemplates\Radical\View\CSharp\BlankView.xaml.cs">
       <DependentUpon>BlankView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemTemplates\Radical\Radical View and ViewModel\CSharp\BlankViewModel.cs" />
-    <Compile Include="ItemTemplates\Radical\Radical ViewModel\CSharp\BlankViewModel.cs" />
-    <Content Include="ItemTemplates\Radical\Radical View and ViewModel\icon.png" />
-    <Content Include="ItemTemplates\Radical\Radical View and ViewModel\VB\BlankView.xaml.vb">
+    <Compile Include="ItemTemplates\Radical\View\CSharp\BlankViewModel.cs" />
+    <Compile Include="ItemTemplates\Radical\ViewModel\CSharp\BlankViewModel.cs" />
+    <Content Include="ItemTemplates\Radical\View\icon.png" />
+    <Content Include="ItemTemplates\Radical\View\VB\BlankView.xaml.vb">
       <DependentUpon>BlankView.xaml</DependentUpon>
     </Content>
-    <Content Include="ItemTemplates\Radical\Radical View and ViewModel\VB\BlankViewModel.vb" />
-    <Content Include="ItemTemplates\Radical\Radical ViewModel\VB\BlankViewModel.vb" />
+    <Content Include="ItemTemplates\Radical\View\VB\BlankViewModel.vb" />
+    <Content Include="ItemTemplates\Radical\ViewModel\VB\BlankViewModel.vb" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ItemTemplates\Radical\Radical ViewModel\Definitions\CSharp.vstemplate" />
-    <Content Include="ItemTemplates\Radical\Radical ViewModel\Definitions\VB.vstemplate" />
-    <Content Include="ItemTemplates\Radical\Radical View and ViewModel\Definitions\CSharp.vstemplate" />
-    <Content Include="ItemTemplates\Radical\Radical View and ViewModel\Definitions\VB.vstemplate" />
+    <Content Include="ItemTemplates\Radical\ViewModel\Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Radical\ViewModel\Definitions\VB.vstemplate" />
+    <Content Include="ItemTemplates\Radical\View\Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\Radical\View\Definitions\VB.vstemplate" />
     <None Include="packages.config" />
-    <Content Include="ItemTemplates\Radical\Radical ViewModel\icon.png" />
+    <Content Include="ItemTemplates\Radical\ViewModel\icon.png" />
     <Content Include="packages\Castle.Core.3.3.0.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -140,22 +140,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <TemplateReference Include="RadicalProject CSharp Template.csproj">
-      <PathToProject>../RadicalProject%20CSharp%20Template/RadicalProject%20CSharp%20Template.csproj</PathToProject>
-    </TemplateReference>
-    <TemplateReference Include="RadicalProject VBNet Template.vbproj">
-      <PathToProject>../RadicalProject%20VBNet%20Template/RadicalProject%20VBNet%20Template.vbproj</PathToProject>
-    </TemplateReference>
+    <Page Include="ItemTemplates\Radical\View\CSharp\BlankView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ItemTemplates\Radical\View\VB\BlankView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ItemTemplates\Radical\Radical View and ViewModel\CSharp\BlankView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ItemTemplates\Radical\Radical View and ViewModel\VB\BlankView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
+    <TemplateReference Include="CS-t.csproj">
+      <PathToProject>../cs-proj/CS-t.csproj</PathToProject>
+    </TemplateReference>
+    <TemplateReference Include="VB-t.vbproj">
+      <PathToProject>../vb-proj/VB-t.vbproj</PathToProject>
+    </TemplateReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
