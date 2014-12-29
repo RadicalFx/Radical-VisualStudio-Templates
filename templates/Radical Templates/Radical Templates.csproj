@@ -70,7 +70,9 @@
     <Compile Include="ItemTemplates\Radical\Radical View and ViewModel\CSharp\BlankViewModel.cs" />
     <Compile Include="ItemTemplates\Radical\Radical ViewModel\CSharp\BlankViewModel.cs" />
     <Content Include="ItemTemplates\Radical\Radical View and ViewModel\icon.png" />
-    <Content Include="ItemTemplates\Radical\Radical View and ViewModel\VB\BlankView.xaml.vb" />
+    <Content Include="ItemTemplates\Radical\Radical View and ViewModel\VB\BlankView.xaml.vb">
+      <DependentUpon>BlankView.xaml</DependentUpon>
+    </Content>
     <Content Include="ItemTemplates\Radical\Radical View and ViewModel\VB\BlankViewModel.vb" />
     <Content Include="ItemTemplates\Radical\Radical ViewModel\VB\BlankViewModel.vb" />
     <Compile Include="Properties\AssemblyInfo.cs" />
