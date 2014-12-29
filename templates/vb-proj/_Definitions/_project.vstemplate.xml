@@ -15,6 +15,7 @@
     
     <!-- Indicates how many parent folders this item template should appear in -->
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$projectname$.vbproj" File="VB-t.vbproj" ReplaceParameters="true">      
