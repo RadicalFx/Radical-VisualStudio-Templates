@@ -5,9 +5,11 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radical Templates", "templates\Radical Templates\Radical Templates.csproj", "{D97AAEED-EF52-43FB-9EB6-C1498A0F8E61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadicalProject CSharp Template", "templates\RadicalProject CSharp Template\RadicalProject CSharp Template.csproj", "{534FB628-E06E-44A9-A7CE-6599A97BB928}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-t", "templates\cs-proj\CS-t.csproj", "{534FB628-E06E-44A9-A7CE-6599A97BB928}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RadicalProject VBNet Template", "templates\RadicalProject VBNet Template\RadicalProject VBNet Template.vbproj", "{FF64D6F4-BB18-42B9-A592-FCA7BB7D6B2C}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB-t", "templates\vb-proj\VB-t.vbproj", "{FF64D6F4-BB18-42B9-A592-FCA7BB7D6B2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Templates", "Project Templates", "{CC3C38E5-DF65-4857-BDB4-209292891888}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,5 +28,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{534FB628-E06E-44A9-A7CE-6599A97BB928} = {CC3C38E5-DF65-4857-BDB4-209292891888}
+		{FF64D6F4-BB18-42B9-A592-FCA7BB7D6B2C} = {CC3C38E5-DF65-4857-BDB4-209292891888}
 	EndGlobalSection
 EndGlobal
