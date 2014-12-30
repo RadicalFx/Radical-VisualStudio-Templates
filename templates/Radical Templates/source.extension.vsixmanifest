@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="RadicalTemplates..7db31f40-8434-4287-8628-c04823341edb" Version="0.2" Language="en-US" Publisher="Radical Framework" />
-    <DisplayName>Radical Templates</DisplayName>
-    <Description xml:space="preserve">Radical MVVM framework projects and items templates</Description>
-    <MoreInfo>http://radical.topics.it</MoreInfo>
-    <Icon>icon.png</Icon>
-    <Tags>Radical, MVVM</Tags>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Version="[11.0,)" Id="Microsoft.VisualStudio.Pro" />
-  </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.0,)" />
-  </Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="Output\ItemTemplates" />
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="Output\ProjectTemplates" />
-  </Assets>
+    <Metadata>
+        <Identity Id="RadicalTemplates..7db31f40-8434-4287-8628-c04823341edb" Version="0.3" Language="en-US" Publisher="Radical Framework" />
+        <DisplayName>Radical Templates</DisplayName>
+        <Description xml:space="preserve">Radical MVVM framework projects and items templates</Description>
+        <MoreInfo>http://radical.topics.it</MoreInfo>
+        <Icon>icon.png</Icon>
+        <Tags>Radical, MVVM</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Version="[11.0,)" Id="Microsoft.VisualStudio.Pro" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.0,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="CS-t" d:TargetPath="|CS-t;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VB-t" d:TargetPath="|VB-t;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    </Assets>
 </PackageManifest>

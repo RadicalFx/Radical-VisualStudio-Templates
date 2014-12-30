@@ -1,4 +1,4 @@
-﻿Imports RadicalTemplate.Presentation
+﻿Imports $safeprojectname$.Presentation
 
 Class Application
 

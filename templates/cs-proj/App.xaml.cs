@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using Topics.Radical.Windows.Presentation.Boot;
 
-namespace RadicalTemplate
+namespace $safeprojectname$
 {
 	/// <summary>
 	/// Interaction logic for App.xaml

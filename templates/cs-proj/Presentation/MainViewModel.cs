@@ -1,7 +1,7 @@
 ﻿using System;
 using Topics.Radical.Windows.Presentation;
 
-namespace RadicalTemplate.Presentation
+namespace $safeprojectname$.Presentation
 {
 	class MainViewModel : AbstractViewModel
 	{
