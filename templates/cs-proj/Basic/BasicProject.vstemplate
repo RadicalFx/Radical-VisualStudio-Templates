@@ -13,7 +13,7 @@
         <ProvideDefaultName>true</ProvideDefaultName>
         <LocationField>Enabled</LocationField>
         <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-        <Icon>sw-file-icon.png</Icon>
+        <Icon>icon.png</Icon>
 
         <!-- Indicates how many parent folders this item template should appear in -->
         <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
@@ -24,7 +24,9 @@
     
     <TemplateContent>
         <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
-            <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+            <Folder Name="Properties" TargetFolderName="Properties">
+                <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+            </Folder>
             <Folder Name="Presentation" TargetFolderName="Presentation">
                 <ProjectItem ReplaceParameters="true" TargetFileName="MainView.xaml">MainView.xaml</ProjectItem>
                 <ProjectItem ReplaceParameters="true" TargetFileName="MainView.xaml.cs">MainView.xaml.cs</ProjectItem>
