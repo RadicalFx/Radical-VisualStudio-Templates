@@ -75,9 +75,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="View %28UserControl%29\BlankViewModel.cs" />
+    <None Include="View %28UserControl%29\BlankView.xaml.cs">
+      <DependentUpon>BlankView.xaml</DependentUpon>
+    </None>
     <None Include="ViewModel\BlankViewModel.cs" />
-    <None Include="View\BlankViewModel.cs" />
-    <None Include="View\BlankView.xaml.cs">
+    <None Include="View %28Window%29\BlankViewModel.cs" />
+    <None Include="View %28Window%29\BlankView.xaml.cs">
       <DependentUpon>BlankView.xaml</DependentUpon>
     </None>
   </ItemGroup>
@@ -99,16 +103,16 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="View\BlankView.xaml">
+    <None Include="View %28Window%29\BlankView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="View\icon.png" />
+    <None Include="View %28Window%29\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="View\ViewItem.vstemplate">
+    <VSTemplate Include="View %28Window%29\ViewWindowItem.vstemplate">
       <OutputSubPath>Radical</OutputSubPath>
     </VSTemplate>
   </ItemGroup>
@@ -117,6 +121,20 @@
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="ViewModel\ViewModelItem.vstemplate">
+      <OutputSubPath>Radical</OutputSubPath>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="View %28UserControl%29\BlankView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="View %28UserControl%29\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="View %28UserControl%29\ViewUserControlItem.vstemplate">
       <OutputSubPath>Radical</OutputSubPath>
     </VSTemplate>
   </ItemGroup>
