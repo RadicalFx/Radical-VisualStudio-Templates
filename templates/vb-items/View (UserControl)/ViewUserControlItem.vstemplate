@@ -1,0 +1,19 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+    
+    <TemplateData>
+        <ProjectType>VisualBasic</ProjectType>
+        <DefaultName>EmptyView.xaml</DefaultName>
+        <Name>Radical View (UserControl) / ViewModel</Name>
+        <Description>Create a new View of type UserControl along with its ViewModel.</Description>
+        <Icon>icon.png</Icon>
+        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    </TemplateData>
+    
+    <TemplateContent>
+        <References />
+        <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">BlankView.xaml</ProjectItem>
+        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.vb" ReplaceParameters="true">BlankView.xaml.vb</ProjectItem>
+        <ProjectItem TargetFileName="$fileinputname$Model.vb" ReplaceParameters="true">BlankViewModel.vb</ProjectItem>
+    </TemplateContent>
+    
+</VSTemplate>
