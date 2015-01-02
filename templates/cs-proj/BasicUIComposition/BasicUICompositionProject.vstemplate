@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+    
+    <TemplateData>
+        <Name>Radical WPF Application with Basic UI Composition</Name>
+        <Description>Create a new WPF Application project using Radical MVVM Framework (C#), with a basic pre-configured UI Composition.</Description>
+        <DefaultName>RadicalWpfApplication</DefaultName>
+
+        <ProjectType>CSharp</ProjectType>
+        <ProjectSubType></ProjectSubType>
+        <SortOrder>1000</SortOrder>
+        <CreateNewFolder>true</CreateNewFolder>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <Icon>icon.png</Icon>
+
+        <!-- Indicates how many parent folders this item template should appear in -->
+        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+
+        <RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+        <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    </TemplateData>
+    
+    <TemplateContent>
+        <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+            <Folder Name="Properties" TargetFolderName="Properties">
+                <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+            </Folder>
+            <Folder Name="Presentation" TargetFolderName="Presentation">
+                <Folder Name="Partial" TargetFolderName="Partial">
+                    <Folder Name="MainContent" TargetFolderName="MainContent">
+                        <ProjectItem ReplaceParameters="true" TargetFileName="EmptyView.xaml">EmptyView.xaml</ProjectItem>
+                        <ProjectItem ReplaceParameters="true" TargetFileName="EmptyView.xaml.cs">EmptyView.xaml.cs</ProjectItem>
+                        <ProjectItem ReplaceParameters="true" TargetFileName="EmptyViewModel.cs">EmptyViewModel.cs</ProjectItem>
+                    </Folder>
+                </Folder>
+                <ProjectItem ReplaceParameters="true" TargetFileName="MainView.xaml">MainView.xaml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="MainView.xaml.cs">MainView.xaml.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="MainViewModel.cs">MainViewModel.cs</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+    
+    <WizardExtension>
+        <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+        <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+    </WizardExtension>
+    
+    <WizardData>
+        <packages repository="extension" repositoryId="RadicalTemplates..7db31f40-8434-4287-8628-c04823341edb">
+            <package id="Castle.Core" version="3.3.0" />
+            <package id="Castle.Windsor" version="3.3.0" />
+            <package id="Radical" version="1.5.0.1" />
+            <package id="Radical.Extensions.CastleWindsor" version="2.1.0.0" />
+            <package id="Radical.Windows" version="1.3.14.1" />
+            <package id="Radical.Windows.Presentation" version="1.10.0.0" />
+            <package id="Radical.Windows.Presentation.CastleWindsor" version="1.3.0.0" />
+        </packages>
+    </WizardData>
+    
+</VSTemplate>
