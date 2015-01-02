@@ -1,4 +1,4 @@
-﻿<Window x:Class="Presentation.MainView"
+﻿<Window x:Class="$safeprojectname$.Presentation.MainView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:markup="http://schemas.topics.it/wpf/radical/windows/markup"
@@ -6,6 +6,6 @@
         xmlns:rg="http://schemas.topics.it/wpf/radical/windows/presentation/regions"
         Title="MainView" Height="300" Width="300">
     <Grid>
-        
+        <ContentPresenter rg:RegionService.Region="{rg:ContentPresenterRegion Name=MainContent}" />
     </Grid>
 </Window>

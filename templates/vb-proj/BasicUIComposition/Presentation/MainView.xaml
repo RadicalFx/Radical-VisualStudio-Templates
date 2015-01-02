@@ -6,6 +6,6 @@
         xmlns:rg="http://schemas.topics.it/wpf/radical/windows/presentation/regions"
         Title="MainView" Height="300" Width="300">
     <Grid>
-        
+        <ContentPresenter rg:RegionService.Region="{rg:ContentPresenterRegion Name=MainContent}" />
     </Grid>
 </Window>

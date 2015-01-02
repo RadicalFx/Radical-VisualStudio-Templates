@@ -85,6 +85,11 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BasicUIComposition\App.config" />
+    <None Include="BasicUIComposition\My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
     <None Include="Basic\Application.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -99,18 +104,36 @@
     <None Include="Basic\Presentation\MainViewModel.vb" />
     <None Include="Basic\My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings1.Designer.vb</LastGenOutput>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Basic\My Project\Settings1.Designer.vb">
+    <None Include="BasicUIComposition\My Project\AssemblyInfo.vb" />
+    <None Include="BasicUIComposition\My Project\MyExtensions\MyWpfExtension.vb" />
+    <None Include="BasicUIComposition\My Project\Resources.Designer.vb" />
+    <None Include="BasicUIComposition\Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+    </None>
+    <None Include="BasicUIComposition\My Project\Settings.Designer.vb">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </None>
+    <None Include="BasicUIComposition\Presentation\MainView.xaml.vb">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </None>
+    <None Include="BasicUIComposition\Presentation\MainViewModel.vb" />
+    <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyView.xaml.vb">
+      <DependentUpon>EmptyView.xaml</DependentUpon>
+    </None>
+    <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyViewModel.vb" />
+    <None Include="Basic\My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
+    </None>
     <None Include="Basic\My Project\MyExtensions\MyWpfExtension.vb" />
     <None Include="Basic\My Project\Resources.Designer.vb" />
-    <None Include="Basic\My Project\Settings.Designer.vb" />
     <None Include="Basic\My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb">
       <SubType>Code</SubType>
@@ -154,6 +177,39 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\My Project\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\Presentation\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="BasicUIComposition\BasicUICompositionProject.vstemplate">
+      <OutputSubPath>Windows\Radical</OutputSubPath>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\ProjectTemplate.vbproj" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

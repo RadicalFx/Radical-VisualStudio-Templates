@@ -103,11 +103,24 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="BasicUIComposition\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </None>
+    <None Include="BasicUIComposition\App.config" />
+    <None Include="BasicUIComposition\Properties\AssemblyInfo.cs" />
+    <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyViewModel.cs" />
+    <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyView.xaml.cs">
+      <DependentUpon>EmptyView.xaml</DependentUpon>
+    </None>
     <None Include="Basic\Presentation\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </None>
     <None Include="Basic\Presentation\MainViewModel.cs" />
     <None Include="Basic\Properties\AssemblyInfo.cs" />
+    <None Include="BasicUIComposition\Presentation\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </None>
+    <None Include="BasicUIComposition\Presentation\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -131,6 +144,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Basic\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="BasicUIComposition\BasicUICompositionProject.vstemplate">
+      <SubType>Designer</SubType>
+      <OutputSubPath>Windows\Radical</OutputSubPath>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\ProjectTemplate.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicUIComposition\Presentation\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
