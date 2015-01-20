@@ -109,7 +109,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="View %28Window%29\icon.png" />
+    <Content Include="View %28Window%29\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="View %28Window%29\ViewWindowItem.vstemplate">
@@ -117,7 +119,9 @@
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ViewModel\icon.png" />
+    <Content Include="ViewModel\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="ViewModel\ViewModelItem.vstemplate">
@@ -131,7 +135,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="View %28UserControl%29\icon.png" />
+    <Content Include="View %28UserControl%29\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="View %28UserControl%29\ViewUserControlItem.vstemplate">

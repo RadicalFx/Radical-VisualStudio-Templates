@@ -143,7 +143,9 @@
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Basic\icon.png" />
+    <Content Include="Basic\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyView.xaml">
@@ -164,7 +166,9 @@
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BasicUIComposition\icon.png" />
+    <Content Include="BasicUIComposition\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="BasicUIComposition\ProjectTemplate.csproj" />

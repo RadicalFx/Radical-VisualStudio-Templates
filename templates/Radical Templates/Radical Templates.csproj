@@ -122,6 +122,7 @@
   <ItemGroup>
     <Content Include="icon.png">
       <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

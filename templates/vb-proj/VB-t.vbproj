@@ -150,7 +150,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Basic\icon.png" />
+    <Content Include="Basic\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Basic\My Project\Resources.resx" />
@@ -199,7 +201,9 @@
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BasicUIComposition\icon.png" />
+    <Content Include="BasicUIComposition\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="BasicUIComposition\ProjectTemplate.vbproj" />

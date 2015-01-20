@@ -119,11 +119,15 @@
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ViewModel\icon.png" />
+    <Content Include="ViewModel\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <VSTemplate Include="View %28Window%29\ViewWindowItem.vstemplate">
       <OutputSubPath>Radical</OutputSubPath>
     </VSTemplate>
-    <None Include="View %28Window%29\icon.png" />
+    <Content Include="View %28Window%29\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="View %28Window%29\BlankView.xaml">
@@ -138,7 +142,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="View %28UserControl%29\icon.png" />
+    <Content Include="View %28UserControl%29\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="View %28UserControl%29\ViewUserControlItem.vstemplate">
