@@ -50,7 +50,7 @@
     </WizardExtension>
 
     <WizardData>
-        <packages repository="extension" repositoryId="RadicalTemplates..7db31f40-8434-4287-8628-c04823341edb">
+        <packages repository="extension" repositoryId="RadicalTemplates..77FA1294-522B-4F19-AD4A-09BF90906E87edb">
             <package id="Castle.Core" version="3.3.0" />
             <package id="Castle.Windsor" version="3.3.0" />
             <package id="Radical" version="1.5.0.1" />
