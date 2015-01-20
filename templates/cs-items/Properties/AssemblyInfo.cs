@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RadicalTemplate")]
+[assembly: AssemblyTitle("CS-it")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RadicalTemplate")]
+[assembly: AssemblyProduct("CS-it")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d3479c79-264f-4989-91b6-e96f48a48075")]
+[assembly: Guid("7a54c6bb-2921-4ae7-8203-0f1924b9befc")]
 
 // Version information for an assembly consists of the following four values:
 //

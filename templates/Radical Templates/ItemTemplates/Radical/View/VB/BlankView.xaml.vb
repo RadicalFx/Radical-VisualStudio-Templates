@@ -1,3 +1,0 @@
-﻿Class $safeitemname$ 
-
-End Class

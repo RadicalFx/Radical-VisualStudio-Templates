@@ -28,14 +28,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{534FB628-E06E-44A9-A7CE-6599A97BB928}</ProjectGuid>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{F184B08F-C81C-45f6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <ProjectGuid>{2423EF4D-445B-44D6-A7D3-A8B1C41D12C6}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RadicalTemplate</RootNamespace>
-    <AssemblyName>RadicalTemplate</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>VB_it</RootNamespace>
+    <AssemblyName>VB-it</AssemblyName>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
     <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
@@ -48,32 +51,50 @@
     <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualStudio.CoreUtility">
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <None Include="View %28UserControl%29\BlankViewModel.vb" />
+    <None Include="View %28UserControl%29\BlankView.xaml.vb">
+      <DependentUpon>BlankView.xaml</DependentUpon>
+    </None>
+    <None Include="View %28Window%29\BlankViewModel.vb" />
+    <None Include="View %28Window%29\BlankView.xaml.vb">
+      <DependentUpon>BlankView.xaml</DependentUpon>
+    </None>
+    <None Include="ViewModel\BlankViewModel.vb" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -93,93 +114,44 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Basic\App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Basic\App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="BasicUIComposition\App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </None>
-    <None Include="BasicUIComposition\App.config" />
-    <None Include="BasicUIComposition\Properties\AssemblyInfo.cs" />
-    <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyViewModel.cs" />
-    <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyView.xaml.cs">
-      <DependentUpon>EmptyView.xaml</DependentUpon>
-    </None>
-    <None Include="Basic\Presentation\MainView.xaml.cs">
-      <DependentUpon>MainView.xaml</DependentUpon>
-    </None>
-    <None Include="Basic\Presentation\MainViewModel.cs" />
-    <None Include="Basic\Properties\AssemblyInfo.cs" />
-    <None Include="BasicUIComposition\Presentation\MainView.xaml.cs">
-      <DependentUpon>MainView.xaml</DependentUpon>
-    </None>
-    <None Include="BasicUIComposition\Presentation\MainViewModel.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Basic\App.config" />
-    <None Include="Basic\ProjectTemplate.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Basic\Presentation\MainView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <VSTemplate Include="Basic\BasicProject.vstemplate">
-      <OutputSubPath>Windows\Radical</OutputSubPath>
-      <SubType>Designer</SubType>
+    <VSTemplate Include="ViewModel\ViewModelItem.vstemplate">
+      <OutputSubPath>Radical</OutputSubPath>
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Basic\icon.png">
+    <Content Include="ViewModel\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <VSTemplate Include="View %28Window%29\ViewWindowItem.vstemplate">
+      <OutputSubPath>Radical</OutputSubPath>
+    </VSTemplate>
+    <Content Include="View %28Window%29\icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BasicUIComposition\Presentation\Partial\MainContent\EmptyView.xaml">
+    <None Include="View %28Window%29\BlankView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BasicUIComposition\App.xaml">
+    <None Include="View %28UserControl%29\BlankView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="BasicUIComposition\BasicUICompositionProject.vstemplate">
-      <SubType>Designer</SubType>
-      <OutputSubPath>Windows\Radical</OutputSubPath>
-    </VSTemplate>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="BasicUIComposition\icon.png">
+    <Content Include="View %28UserControl%29\icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BasicUIComposition\ProjectTemplate.csproj" />
+    <VSTemplate Include="View %28UserControl%29\ViewUserControlItem.vstemplate">
+      <OutputSubPath>Radical</OutputSubPath>
+    </VSTemplate>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="BasicUIComposition\Presentation\MainView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
