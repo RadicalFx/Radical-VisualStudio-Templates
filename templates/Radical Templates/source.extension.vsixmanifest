@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="RadicalTemplates..77FA1294-522B-4F19-AD4A-09BF90906E87edb" Version="0.4" Language="en-US" Publisher="Radical Framework" />
+    <Identity Id="RadicalTemplates..77FA1294-522B-4F19-AD4A-09BF90906E87edb" Version="0.5" Language="en-US" Publisher="Radical Framework" />
     <DisplayName>Radical Templates</DisplayName>
     <Description xml:space="preserve">Radical MVVM framework projects and items templates</Description>
     <MoreInfo>http://radical.topics.it</MoreInfo>

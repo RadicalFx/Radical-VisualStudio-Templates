@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Templates", "Project Templates", "{CC3C38E5-DF65-4857-BDB4-209292891888}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Item Templates", "Item Templates", "{5A874BFB-C9AE-41B3-B56A-3AD262302C99}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radical Templates", "templates\Radical Templates\Radical Templates.csproj", "{D97AAEED-EF52-43FB-9EB6-C1498A0F8E61}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-t", "templates\cs-proj\CS-t.csproj", "{534FB628-E06E-44A9-A7CE-6599A97BB928}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB-t", "templates\vb-proj\VB-t.vbproj", "{FF64D6F4-BB18-42B9-A592-FCA7BB7D6B2C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Templates", "Project Templates", "{CC3C38E5-DF65-4857-BDB4-209292891888}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Item Templates", "Item Templates", "{5A874BFB-C9AE-41B3-B56A-3AD262302C99}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-it", "templates\cs-items\CS-it.csproj", "{C2902A50-97AA-46A1-8306-BFC1B0C0EC81}"
 EndProject
