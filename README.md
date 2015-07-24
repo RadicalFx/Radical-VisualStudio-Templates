@@ -1,7 +1,7 @@
 Radical-VisualStudio-Templates
 ==============================
 
-Radical Framework Visual Studio templates, available in the Visual Studio gallery: https://visualstudiogallery.msdn.microsoft.com/5ff17cc4-ecf3-4395-9e18-d4673186e2fe
+Radical Framework Visual Studio templates, available in the Visual Studio gallery: https://visualstudiogallery.msdn.microsoft.com/22dd31eb-3cb7-4027-972c-a6c96671cddd
 
 ### Debug
 
