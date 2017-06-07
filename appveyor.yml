@@ -17,7 +17,7 @@
   artifacts:
     - path: src\build\Release
     - path: src\build\nuget\*.nupkg
-    - path: templates\Radical Templates\bin\Release\*.vsix
+    - path: "templates\Radical Templates\bin\Release\*.vsix"
 
   cache:
     - src\packages -> src\**\packages.config
