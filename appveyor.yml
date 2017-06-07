@@ -15,9 +15,9 @@
     use_build_number_in_packages: true
 
   artifacts:
-    - path: src\build\Release
-    - path: src\build\nuget\*.nupkg
-    - path: "templates\Radical Templates\bin\Release\*.vsix"
+#    - path: src\build\Release
+#    - path: src\build\nuget\*.nupkg
+    - path: build\Release\*.vsix
 
   cache:
     - src\packages -> src\**\packages.config
